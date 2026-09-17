@@ -6,3 +6,13 @@ echo "El segundo argumento define la carpeta o trayectoria a analizar. Si el usu
 
 palabra $1
 trayectoria $2
+
+if [ -z "$palabra" ]; then
+    echo "Error: No se ha proporcionado una palabra"
+    exit 1
+fi
+
+if [ -z "$trayectoria" ]; then
+    echo "Error: No se ha proporcionado una trayectoria"
+    exit 1
+fi
